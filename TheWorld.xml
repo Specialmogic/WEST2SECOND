@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TheWorld>
+	<!--dream为打怪掉落的梦之精华，释放、升级技能需要消耗梦之精华(20点，每轮限升级一次)
+	每次战斗结束会询问是否升级技能-->
+	<!--5点生命值==1点攻击力==10梦之精华，
+	进入梦境收割获得60-80梦之精华，直接打死获得150-160不等的精华
+	每次使用梦之精华升级梦之剑时，
+	主角的生命值上升之前最大生命值的20%和幸运属性上升5点
+	luck属性可以增加角色暴击伤害，角色暴击率固定为35%，角色初始暴击伤害为130
+	当升到满级时，才有可能打败先知走相信自我路线；
+	不然战斗失败游戏结束进入相信魔王路线-->
+
+	<hero id="1"  name=" 迷失的勇者 " hp="200"  dream="50" luck="130" crit="35"/>
+	
+	<weapon level ="1" dreamattack="10" name="梦之剑" experience="50" />
+	<weapon level ="2" dreamattack="15" name="梦之剑+" experience="70"/>
+	<weapon level ="3" dreamattack="19" name="梦之剑++" experience="100"/>
+	<weapon level ="4" dreamattack="24" name="梦之剑+++" experience="200"/>
+	<weapon level ="5" dreamattack="40" name="梦之殇" experience="999"/>
+	
+	<!--每当角色升级，技能消耗将会减少，A类型为伤害技能调用以下伤害计算公式：
+	技能伤害为(dreamattack*a+damage)*a,a为一个在0.8~1.1之间的随机数，且最终伤害取整并+1点
+	B类技能为辅助技能调用以下公式：luck/10*a
+	技能消耗值=dream-（weapon.level-1）*2-->
+	<!--怪物的describe被battleinformation调用来输出描述，勇者的describe用来介绍技能，并不同！-->
+	<skill id="1" name="火球术 C-" damage="10" dream="10"   describe="造成大量伤害" type="1"/>
+		<!--damage即伤害性技能，即数字1；special即辅助性技能,即数字2-->
+	<skill id="2" name="罪恶焚烧 B" damage="30" dream="25"   describe="造成十分恐怖的伤害" type="1"/><!--大量伤害-->
+	<skill id="3" name="亮晶晶 E" damage="-10" dream="10"   describe="造成少量伤害" type="1"/><!--亮晶晶能够造成少量伤害，星能使敌方攻击力永久下降level点-->
+	<skill id="4" name="星 A+" damage="-5" dream="15"    describe="幸运+" type="1"/>
+	<skill id="5" name="生机E" damage="0" dream="16"   describe="生命值+" type="2"/>
+	<!--生机增加自身hp，无痕之森永久提升本轮游戏luck值3点-->
+	<skill id="6" name="无痕之森D+" damage="0" dream="20"   describe="令敌人攻击力--" type="2"/>
+	<skill id="7" name="无辜的牲畜 C" damage="0" dream="0" type="2"  describe="生命值--，梦之精华++"/><!--扣除自身hp恢复自身dream+本次消耗的hp-->
+	<skill id="8" name="献祭 B" damage="0" dream="0" type="2"  describe="生命值--，梦之精华++++"/>
+	
+	
+	<!--以下为怪物技能！-->
+<!--勇者梦之精华减少-->	<skill id="11" name="梦境的颂唱 ?" damage="-10" dream="0"  type="1"  describe="吸取了梦精华！"/>
+<!--吸取血--><skill id="12" name="生命汲取 ?" damage="5" dream="10" type="1"  describe="生命值恢复了！"/>
+   <skill id="13" name="空洞世界 ??" damage="15" dream="15" type="1"  describe="大量伤害"/>
+	<skill id="14" name="挽歌 ?" damage="10" dream="20" type="1"  describe="少量伤害"/>
+	
+ <!--攻击力上升--><skill id="21" name="咆哮 ?" damage="0" dream="10"   type="2" describe="攻击力上升了！"/> 
+<!--全部属性大幅上升-->	<skill id="22" name="永恒轮回 ?" damage="0" dream="10" type="2"  describe="属性大幅度上升！"/>
+<!--勇者luck,crit小幅度下降-->	<skill id="23" name="世之哀伤 ?" damage="0" dream="10" type="2"  describe="使得勇者幸运值都降低了！"/>
+	
+
+
+
+	<monstor id="1" name="奇异怪物" dreamattack="10" dream="200" hp="70"
+			 beforefight="魔……王……" playeranswer="魔王？究竟是谁！"/>
+	<monstor id="2" name="愤怒的蔡崇" dreamattack="10" dream="200" hp="100"
+			 beforefight="今天就是你的，死期！" playeranswer="你我无缘无故——"/>
+	<monstor id="3" name="双生花精灵" dreamattack="12" dream="200" hp="170" 
+			 beforefight="我会为我们长森村报仇的——" playeranswer="我根本对长森村没有印象啊！"/>
+	<monstor id="4" name="长森村的“长老”" dreamattack="12" dream="200" hp="160" 
+			 	beforefight="陛下这种先造再灭的扭曲的性格就由我来毁灭" 
+playeranswer="我，不是勇者，不是魔王，而是陛下？还是说，这一切都只是魔王蛊惑的把戏？"/>
+	<monstor id="5" name="不知名的小怪" dreamattack="10" dream="200" hp="100"
+			 	beforefight="嗷呜—— " playeranswer="这难不成是狼的变种？"/>
+    <monstor id="6" name="不知名的小怪" dreamattack="10" dream="200" hp="100"
+			 	beforefight="汪！" playeranswer="这难不成是狗的变种？"/>
+	<monstor id="7" name="魔王" dreamattack="15" dream="200" hp="250"
+			 beforefight="我要以勇者的身份终结你的统治，让魔王你为暴行付出代价！"
+			 playeranswer="明明我才是勇者！去死吧魔王！  "/><!--魔王路线-->
+	<monstor id="8" name="“魔王”" dreamattack="15" dream="200" hp="150"
+		 beforefight="我一直在拯救这个世界——"
+		 playeranswer="哼，别在狡辩了，魔王！今天我要履行我勇者的职责，消灭你！维护这个世界的和平！"/><!--勇者路线-->
+	<monstor id="9" name="觉醒的魔王" dreamattack="20" dream="200" hp="150"
+		 beforefight="（狂笑声）哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+		 playeranswer="他已经疯了呢——,是时候给予最后的打击了。加油，勇者，你能行的！为了你自己而战！"/>
+	<!--勇者路线-->
+	<!--真相路线-->>
+	<monstor id="10" name="巨大墨七琦" dreamattack="25000" dream="200" hp="25000"
+		 beforefight="一号，别怪我不手下留情！"
+		 playeranswer="你究竟还隐瞒了多少！"/>
+	
+
+
+
+</TheWorld>

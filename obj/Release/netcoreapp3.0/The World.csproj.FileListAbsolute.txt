@@ -1,0 +1,13 @@
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.exe
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.deps.json
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.runtimeconfig.json
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.runtimeconfig.dev.json
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.dll
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\The World.pdb
+F:\west2\part2\The World\bin\Release\netcoreapp3.0\Newtonsoft.Json.dll
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.csprojAssemblyReference.cache
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.AssemblyInfoInputs.cache
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.AssemblyInfo.cs
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.csproj.CopyComplete
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.dll
+F:\west2\part2\The World\obj\Release\netcoreapp3.0\The World.pdb

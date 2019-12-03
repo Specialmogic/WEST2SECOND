@@ -1,0 +1,26 @@
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.exe
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.deps.json
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.runtimeconfig.json
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.runtimeconfig.dev.json
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.dll
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\The World.pdb
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.csprojAssemblyReference.cache
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.AssemblyInfoInputs.cache
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.AssemblyInfo.cs
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.dll
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.pdb
+F:\west2\part2\The World\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+F:\west2\part2\The World\obj\Debug\netcoreapp3.0\The World.csproj.CopyComplete
+C:\The World\bin\Debug\netcoreapp3.0\The World.exe
+C:\The World\bin\Debug\netcoreapp3.0\The World.deps.json
+C:\The World\bin\Debug\netcoreapp3.0\The World.runtimeconfig.json
+C:\The World\bin\Debug\netcoreapp3.0\The World.runtimeconfig.dev.json
+C:\The World\bin\Debug\netcoreapp3.0\The World.dll
+C:\The World\bin\Debug\netcoreapp3.0\The World.pdb
+C:\The World\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\The World\obj\Debug\netcoreapp3.0\The World.csprojAssemblyReference.cache
+C:\The World\obj\Debug\netcoreapp3.0\The World.AssemblyInfoInputs.cache
+C:\The World\obj\Debug\netcoreapp3.0\The World.AssemblyInfo.cs
+C:\The World\obj\Debug\netcoreapp3.0\The World.csproj.CopyComplete
+C:\The World\obj\Debug\netcoreapp3.0\The World.dll
+C:\The World\obj\Debug\netcoreapp3.0\The World.pdb
